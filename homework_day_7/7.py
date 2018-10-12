@@ -2,11 +2,10 @@ import random
 def shuffle(lst):
     l= len(lst)
     s=[]
-    for i in range(len(lst)):
-        n=random.randint(0,l-1)
+    for i in range(l):
+        n=random.randint(0,len(lst)-1)
         s.append(lst[n])
         lst.pop(n)
-        l -= 1
     print(s)
 
 if __name__ == '__main__':
